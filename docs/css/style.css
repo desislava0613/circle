@@ -1,0 +1,30 @@
+.box {
+    width:150px;
+    height: 150px;
+    background-color: orange;
+    margin: 0 auto;
+    margin-top: 4em;
+    animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
+@keyframes pulse {
+    0% {
+        
+        background-color: orange;
+    }
+
+    100% {
+        transform: scale(.3);
+        background-color: red;
+        border-radius: 50%;
+    }
+
+   
+}
